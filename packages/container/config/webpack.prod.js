@@ -9,7 +9,7 @@ const domain = process.env.PRODUCTION_DOMAIN;
 const moduleFederationPluginConfig = new ModuleFederationPlugin({
   name: 'container',
   remotes: {
-    marketing: `marketing@${domain}/marketing/remoteEntry.js`
+    marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
   },
   shared: packageJson.dependencies
 }); 
